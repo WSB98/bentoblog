@@ -1,0 +1,166 @@
+{
+  "BLOGS": [
+    {
+      "id": 1,
+      "name": "Maximizing Value Through Strategic Software Procurement",
+      "description": "Our software procurement services guide businesses through the entire software selection and acquisition process, ensuring they obtain the best-fit solutions with optimal value.",
+      "tags": ["Technology Audit", "Demos", "Negotiation", "Implementation"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Jan 1, 2021",
+      "lastUpdated": "Jan 2, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/1.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Seamless Procurement & Implementation for Business Success",
+      "description": "Our procurement and implementation services ensure a seamless integration of new software into your business operations.",
+      "tags": ["Technology Audit", "Software Recommendations", "Implementation", "CRM Design & HTML"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Feb 15, 2021",
+      "lastUpdated": "Feb 16, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/2.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Enhancing Efficiency with Managed Services",
+      "description": "Our managed services offer comprehensive support for your CRM and sales operations, including audits, hiring, onboarding, and custom code support.",
+      "tags": ["CRMs", "Sales and Marketing Audit", "Hiring and Onboarding", "Custom Code"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Mar 1, 2021",
+      "lastUpdated": "Mar 2, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/5.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Custom Development: Tailoring Solutions to Your Needs",
+      "description": "Our custom development services deliver tailored solutions that fit your unique business needs.",
+      "tags": ["Custom Design", "Graphics", "Branding", "Website", "Security"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Apr 12, 2021",
+      "lastUpdated": "Apr 13, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/6.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Optimizing Business Operations through System Integration",
+      "description": "Our system integration services ensure seamless connectivity across your enterprise systems.",
+      "tags": ["ERP Integration", "API Management", "Data Migration", "System Performance Analysis"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Jun 3, 2021",
+      "lastUpdated": "Jun 4, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/7.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Comprehensive Cybersecurity Strategies for Business Protection",
+      "description": "Our cybersecurity services protect your business from digital threats with comprehensive solutions.",
+      "tags": ["Network Security", "Data Protection", "Vulnerability Assessments", "Incident Response"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Jul 19, 2021",
+      "lastUpdated": "Jul 20, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/8.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Boosting Online Presence with Digital Marketing Services",
+      "description": "Our digital marketing services elevate your online presence through strategic SEO optimization, content creation, social media management, and targeted email campaigns.",
+      "tags": ["SEO Optimization", "Content Creation", "Social Media Management", "Email Marketing Campaigns"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Aug 25, 2021",
+      "lastUpdated": "Aug 26, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/9.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Empowering Businesses with Cloud Solutions",
+      "description": "Our cloud solutions empower your business with flexible, scalable, and secure infrastructure.",
+      "tags": ["Cloud Migration", "Infrastructure Management", "Data Storage Solutions", "Disaster Recovery"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Sep 10, 2021",
+      "lastUpdated": "Sep 11, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/12.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Advanced Digital Marketing for Brand Growth",
+      "description": "Our digital marketing services are designed to boost your brand's online visibility and engagement.",
+      "tags": ["SEO Optimization", "Content Creation", "Social Media Management", "Email Marketing Campaigns"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Oct 1, 2021",
+      "lastUpdated": "Oct 2, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/14.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Building Resilient Businesses with Cloud Solutions",
+      "description": "Our cloud solutions offer robust, scalable, and secure infrastructure tailored to your business needs.",
+      "tags": ["Cloud Migration", "Infrastructure Management", "Data Storage Solutions", "Disaster Recovery"],
+      "blogContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "blogDate": "Nov 20, 2021",
+      "lastUpdated": "Nov 21, 2021",
+      "image": "https://45135684.fs1.hubspotusercontent-na1.net/hubfs/45135684/16.png",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/yourprofile",
+        "instagram": "https://www.instagram.com/yourprofile",
+        "twitter": "https://www.twitter.com/yourprofile",
+        "linkedin": "https://www.linkedin.com/yourprofile"
+      }
+    }
+  ],
+  "AnyCallRelatedTrackingVariables": "foobar"
+}
+

@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap&family=Cherry+Bomb+One&family=Foldit:wght@600&family=IBM+Plex+Mono&family=Inter&family=Monoton&family=Nunito&family=Open+Sans&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,300;0,500;1,100&family=Roboto&family=Roboto+Mono&display=swap?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+  --matteBlack:#222222;
+  --mintGreen:#3EB489;
+  --matteRed:#B33F40;
+  --softGreen:#9ad1bd;
+  --offWhite:#fffdfa;
+  --softWhite:#f1f0ed;
+  --cream:#e8e0d6;
+  --lightblue:#64aef2;
+  --clear:#00000000;
+  --deepBlue:#021f3a;
+  --contrastBlack:#010409;
+  --charcoalGrey:#7a828e;
+  --softBlack:#242222;
+  --offWhiteTrans:#fffdfa50;
+  --matteBlackTrans: #22222233;
+  --accountingGrey:#cccccc;
+  --neumorphBG_light:#fffdfa20;
+  --neumorphBG_dark:#22222220;
+  --lightBlackTrans: #63605c50;
+  --neumorphGradient:linear-gradient(145deg, #ffffff, #e6e4e1);
+  --legradient:linear-gradient(45deg, #fffdfa, #cccccc);
+  --neumorphShadow:41px 41px 60px #d9d7d5, -41px -41px 60px #ffffff;
+  --transBlack: #1f1f1f90;
+  --greyTrans: #cccccc50;
+  --offWhiteLucent: #fffdfa90;
+  --matteBlackLucent: #22222280;
+  --greyLucent: #cccccc80;
+  --hallBlue:#00A3E0;
+  --arkitechBlue: #003E51;
+  --arkitechBlueTrans: #003E5150;
+  --BadOrange: #E9C66D;
+  --BadOrangeTrans: #E9C66D99;
+  --badMatteBlack: #2f2f2f;
+  --midBlack: #1d1b1b;
+  --BadPink: #EA9692;
+  --BadPinkTrans: #EA969299;
+  --BadBlue:#a1c5ff;
+  --BadBlueTrans:#a1c5ff50;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  text-align: center;
+  color:var(--offWhite);
+  background-color: var(--matteBlack);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+#header {
+  padding: 2px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  left: 0px;
+  right: 0px;
+  top: -1px;
+  background-color: var(--matteBlackLucent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0px 0px 12px var(--matteBlackTrans);
+  z-index: 100;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing:-0.025rem;
+  overflow:hidden;
+  color: var(--offWhite);
+  transition: all ease-out 0.12s;
+}
+
+#header svg {
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  padding: 0px;
+  fill: var(--offWhite);
+}
+
+#header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: var(--offWhite);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+#header li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--offWhite);
+  border-bottom: 1px solid var(--clear);
+  border-left: 1px solid var(--clear);
+  transition: all ease 0.2s;
+}
+#header li p {
+position: relative;
+border-radius: 64px;
+font-size: 12px;
+font-weight: 700;
+background-color: var(--hallBlue);
+}
+#header a {
+  text-decoration: none;
+}
+#header img {
+  height: 48px;
+  padding:4px;
+  transition: all ease-out 0.12s;
+}
+
+#header li:hover {
+  border-bottom: 1px solid var(--offWhite);
+  border-radius: 0px;
+}
+#mobile_menu {
+  display: none;
+  fill: var(--offWhite);
+  height: 36px;
+  width: 36px;
+  margin-top: 24px;
+  padding: 0px;
+}
+#mobile_popup {
+  position: fixed;
+  padding: 8px;
+  padding-top: 92px !important;
+  height: 100vh;
+  top: 0px;
+  width: 100%;
+  transform: translate(120%, 0%);
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--offWhite), var(--accountingGrey));
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  z-index: 20;
+  transition: all ease-out 0.32s;
+}
+#mobile_popup a {
+  text-decoration: none;
+  color: var(--badMatteBlack);
+  font-size: 32px;
+  transition: all ease-out 0.2s;
+}
+
+#mobile_popup a:hover {
+  text-decoration: underline;
+}
+footer {
+  position:relative;
+  width: 100%;
+  bottom: 0px;
+  background-color: var(--matteBlack);
+  color: var(--charcoalGrey);
+  height: auto;
+  margin-top: 0px;
+}
+
+footer {
+  position:relative;
+  width: 100%;
+  bottom: 0px;
+  background:linear-gradient(135deg, var(--BadPinkTrans), var(--BadOrangeTrans));
+  color: var(--accountingGrey);
+  height: auto;
+  margin-top: 0px;
+}
+footer img {
+  width: 200px;
+}
+#topInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 12px;
+  position: relative;
+  top: 48px;
+  margin: 0 auto;
+  width: 90%;
+}
+#topInfo a {
+  text-decoration: none;
+  color: var(--accountingGrey);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+#topInfo a svg {
+  width: 24px;
+  fill: var(--accountingGrey);
+}
+#topInfo div {
+  max-width: 350px;
+}
+#topInfo h5 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 24px;
+}
+#bottomInfo {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  padding: 12px;
+  margin-top: 100px;
+  position: relative;
+  justify-content: space-between;
+  height: auto;
+}
+#bottomInfo div {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+#bottomInfo a {
+  text-decoration: none;
+  color: var(--accountingGrey);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+
+h1 {
+  font-size: 128px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom:-48px;
+  text-align: center;
+  background: linear-gradient(100deg, #ea9692, #e9c66d);
+  -webkit-background-clip: text;
+  width:fit-content;
+  width: -moz-fit-content;
+  width:-webkit-fit-content;
+  color: transparent;
+  letter-spacing:-1px;
+}
+/* Add this to your existing CSS file */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  display: inline;
+  animation: blink 1s step-end infinite;
+  color:var(--BadOrangeTrans);
+  font-size:112px;
+  top:-12px;
+  position:relative;
+}
+/* extra */
+#how {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  max-width:1600px;
+  min-height: 420px;
+  height: auto;
+  margin: 0 auto;
+  margin-top:0px;
+  margin-bottom:120px;
+  padding:0px;
+}
+@keyframes fadeIn {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+.op-content {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 62%;
+  justify-content: space-between;
+  height: auto;
+  top: 0px;
+  right: 0px;
+  margin-left: 35%;
+  position: relative;
+  z-index: 5;
+  text-align: left;
+  margin-top:12px;
+  padding: 6px;
+  border-radius:8px;
+  background:linear-gradient(135deg, var(--transBlack), var(--matteBlackTrans));
+  opacity:0;
+  transition: all ease-out 0.16s;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding-bottom: 12px;
+}
+/* Remove the default list styling */
+.op-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.op-content ul li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;  /* Adjust based on your SVG size */
+  height: 16px; /* Adjust based on your SVG size */
+  margin-right: 8px; /* Space between the SVG and the text */
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Different SVGs for different list items */
+li.icon1::before {
+  background-image: url('graphics/check.svg');
+}
+
+li.icon2::before {
+  background-image: url('graphics/ban.svg');
+}
+
+.how-option:hover .op-content {
+  opacity: 1;
+  transition-delay: 0.32s;
+}
+.op-content-prev .op-dates {
+  opacity:0;
+  position:absolute !important;
+}
+.op-content-prev .op-link {
+  opacity:0;
+  position:absolute !important;
+}
+.op-content-prev h5 {
+  opacity:0;
+  position:absolute !important;
+}
+.op-content-prev {
+  margin: 0 auto !important;
+  width:95% !important;
+  padding: 4px 12px !important;
+  padding-bottom:12px !important;
+}
+.op-content h5 {
+  margin: 0 auto;
+  padding: 0px;
+  top: 0px;
+  position: relative;
+  font-size:18px;
+  font-weight:400;
+}
+
+.how-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 0px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 36px;
+  height: 100%;
+  cursor: pointer;
+  border-radius:24px;
+  box-shadow:0px 0px 12px 0px var(--softBlack);
+  overflow:hidden;
+}
+.sep {
+  width:100%;
+  margin:0 auto;
+}
+.op-link {
+  width:fit-content;
+  height:fit-content;
+  padding: 4px 8px;
+  border-radius: 24px;
+  background-color: var(--accountingGrey);
+  color: var(--badMatteBlack);
+  box-shadow: 0px 2px 0px 4px var(--badMatteBlack);
+  z-index: 5;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 200%;
+  left: calc(50% - 50px);
+  transition: all ease-out 0.12s;
+  display: flex;
+  transition-delay: 0.32s;
+}
+.how-option:hover .op-link {
+  display: flex;
+  top:104%;
+}
+.op-link:hover {
+  background-color: #fffdfa;
+  transition-delay: 0.0s;
+}
+.op-link:active {
+  box-shadow: 0px 2px 0px 2px var(--badMatteBlack);
+  transform: scale(0.95) translate(0px, 2px);
+  transition-delay: 0.0s;
+}
+.how-option {
+  position: relative; /* Needed for the pseudo-element to position correctly */
+  width: 25%;
+  height: 420px;
+  transition: all ease-out 0.32s;
+  overflow: hidden; /* Ensures the pseudo-element does not overflow */
+  object-fit:cover;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation:fadeIn forwards ease-out 1s;
+  opacity:0;
+}
+.how-option::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a tint */
+  transition: all ease-out 0.32s;
+  z-index: 1; /* Ensure it's behind other content */
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+}
+.how-option:hover::before {
+  backdrop-filter: none; /* Remove blur */
+  -webkit-backdrop-filter: none; /* Remove blur */
+  background-color: rgba(0, 0, 0, 0.0); /* Remove tint */
+}
+.how-option:hover h3 {
+  color:var(--offWhite);
+}
+.op-prev h3 {
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 6px;
+  position: relative;
+  z-index: 2; /* Ensure text is on top of the pseudo-element */
+  font-family: 'Poppins', sans-serif;
+  color: var(--accountingGrey);
+  margin-left: 12px;
+  letter-spacing:-1px;
+  transition: all ease-out 0.12s;
+  text-shadow: 0px 0px 4px var(--matteBlack);
+}
+.op1::before {
+  background-image: url('graphics/softwareproc.png');
+}
+.op2::before {
+  background-image: url('graphics/procimplement.png'); /* Update this with the correct image */
+}
+.op3::before {
+  background-image: url('graphics/managedservice.png'); /* Update this with the correct image */
+}
+.op4::before {
+  background-image: url('graphics/customdev.png'); /* Update this with the correct image */
+}
+.howHead {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--BadBlue);
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  color: var(--badMatteBlack);
+  font-weight: 400;
+  height: fit-content;
+}
+.whyDescription {
+  width: 80%;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.op-dates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+  width: fit-content;
+  margin: 0 ;
+  left:0px;
+  margin-top: 12px;
+  font-size:12px;
+  gap:12px;
+}
+.op-dates p {
+  margin: 0 auto;
+  padding: 4px 8px;
+  font-family:'Poppins', sans-serif;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  color:var(--accountingGrey);
+  gap:6px;
+}
+.op-dates p svg {
+  fill:var(--accountingGrey);
+  height:18px;
+  width:18px;
+}
+.op-tags {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:left;
+  width:100%;
+  margin:0 auto;
+  margin-top:12px;
+  gap:4px;
+}
+.op-tags a {
+  font-size:12px;
+  font-family:'Urbanist', sans-serif;
+  border:1px solid var(--offWhite);
+  padding: 4px 8px;
+  border-radius:12px;
+  opacity: 0.7;
+}
+.op-tags a:hover {
+  opacity: 1;
+}
+.op-tech {
+  background-color: var(--BadBlue);
+  color: var(--badMatteBlack);
+}
+.op-biz {
+  background-color: var(--BadOrange);
+  color: var(--badMatteBlack);
+}
+.op-anal {
+  background-color: var(--BadPink);
+  color:var(--badMatteBlack)
+}
+.op-date-published:hover::after {
+  content:'Published';
+  width: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: all ease-out 0.12s;
+  /* Position the tooltip text */
+  position: absolute;
+  margin-top:-32px;
+  z-index: 1;
+}
+.op-date-last-updated:hover::after {
+  content:'Updated';
+  width: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: all ease-out 0.12s;
+  /* Position the tooltip text */
+  position: absolute;
+  margin-top:-32px;
+  z-index: 1;
+}
+#contactButton {
+  text-decoration: none;
+  color: var(--offWhite);
+  border: 1px solid var(--accountingGrey);
+  padding: 2px 4px;
+  border-radius: 4px;
+  text-align: center;
+  align-items: center;
+  margin-right: 12px;
+  transition: all ease-out 0.12s;
+  background: linear-gradient(135deg, var(--clear), var(--clear));
+}
+#contactButton:hover {
+  background-color: var(--accountingGrey);
+  color: var(--matteBlack);
+}
+
+
+@media (max-width: 1200px) {
+  #header {
+    gap: 24px;
+  }
+  #header #navLinks {
+    display: none;
+  }
+    #topInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px;
+      position: relative;
+      top: 32px;
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
+      align-items: center;
+    }
+    #topInfo a {
+      gap: 6px;
+      font-size: 12px;
+    }
+    #topInfo p {
+      font-size: 12px;
+    }
+    #topInfo a svg {
+      width: 18px;
+    }
+
+    #topInfo h5 {
+      font-size: 18px;
+    }
+    #bottomInfo {
+      display: flex;
+      flex-direction: row;
+      width: 95%;
+      padding: 12px;
+      margin-top: 64px;
+      position: relative;
+      justify-content: space-between;
+      height: auto;
+      font-size: 12px;
+    }
+
+    #topInfo img {
+      width: 120px;
+    }
+
+    #contentArea {
+      margin-top: 96px;
+      padding: 8px;
+      color: var(--matteBlack);
+    }
+  #header img {
+    height:36px;
+  }
+
+    #header {
+      padding: 2px 12px;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 52px;
+      width: 100%;
+      text-align: center;
+      position: fixed;
+      margin: 0 auto;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      box-shadow: 0px 0px 18px var(--matteBlackTrans);
+      z-index: 100;
+  }
+  #header svg {
+    width: 24px;
+    height: 24px;
+    margin-top: 6px;
+  }
+  #mobile_menu {
+      display: flex;
+      fill: var(--badMatteBlack);
+      height: 48px;
+      width: 48px;
+      margin-bottom: 16px;
+  }
+  .op-content {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 18px;
+  }
+
+  .op-content ul li {
+    font-size: 14px;
+  }
+  .whyDescription {
+    font-size: 14px;
+  }
+  .op-content h5 {
+    font-size: 14px;
+  }
+  .op-dates p {
+    font-size: 12px;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+  }
+  .op-dates p svg {
+    height: 16px;
+    width: 16px;
+  }
+  .op-tags a {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+  #whereNavigation a {
+    height: 28px;
+    width: 28px;
+  }
+  #whereNavigation a svg {
+    top: 0px;
+    position: relative;
+  }
+  .how-content {
+    flex-direction: row; /* Stack items vertically */
+    flex-wrap: wrap;
+    gap: 0px;
+    height: auto; /* Allow height to adjust automatically */
+  }
+  .how-option {
+    width: 33.33%;
+    height: 380px;
+  }
+
+  .how-option {
+    width: 50%;
+    height:400px;
+  }
+
+
+  .how-option:hover .op-prev h3 {
+    font-size: 18px;
+  }
+  .how-content .how-option:hover .op-content {
+    margin-top: 8px;
+    margin-left: 20%;
+  }
+  .op-prev h3 {
+    margin: 0;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-size: 28px;
+  }
+}
+@media(max-width: 800px) {
+  h1 {
+    font-size:64px;
+  }
+  .blink {
+    font-size:52px;
+    top:-6px;
+  }
+  .op-content {
+    margin-left: 10%;
+    margin-top: 6px;
+  }
+  
+  .op-content ul li {
+    font-size: 12px;
+  }
+  .whyDescription {
+    font-size: 12px;
+  }
+  .op-content h5 {
+    font-size:12px;
+  }
+  .op-dates p {
+    font-size: 10px;
+    flex-wrap:nowrap;
+    display:flex;
+    flex-direction:row;
+    padding:0px;
+  }
+  .op-dates p svg {
+    height:12px;
+    width:12px;
+  }
+  .op-tags a {
+    font-size:10px;
+    padding: 2px 4px;
+  }
+  #whereNavigation a {
+    height: 24px;
+    width: 24px;
+  }
+  #whereNavigation a svg {
+    top: 0px;
+    position:relative;
+  }
+  .how-content {
+    flex-direction: row; /* Stack items vertically */
+    flex-wrap: wrap;
+    gap: 0px;
+    height: auto; /* Allow height to adjust automatically */
+  }
+  .how-option {
+    width: 50%;
+    height:360px;
+  }
+
+
+
+  .how-option:hover .op-prev h3 {
+    font-size:16px;
+  }
+  .how-content .how-option:hover .op-content {
+    margin-top:6px;
+    margin-left:15%;
+  }
+  .op-prev h3 {
+    margin: 0;
+    margin-left: 6px;
+    margin-top: 6px;
+    font-size: 24px;
+  }
+}
